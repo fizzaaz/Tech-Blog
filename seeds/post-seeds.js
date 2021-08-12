@@ -1,19 +1,19 @@
 const { Post } = require('../models');
 
 const postData = [{
-        title: 'Lorem Ipsum I',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        title: '5 Steps to Making an Outfit under 5 Minutes',
+        content: 'Fashion OMG FIZZA! YOU GOT SOME REALLY COOL OUTFIT ',
         user_id: 1
 
-    },
+    }, 
     {
-        title: 'Lorem Ipsum II',
-        content: 'Amet aliquam id diam maecenas ultricies mi eget mauris pharetra.',
+        title: '5 QUICK FOOD RECEIPES',
+        content: 'Eric Kim’s critically acclaimed eggplant recipe — just look at that five-star average rating! — makes the most of pantry staples and just two ingredients from the produce aisle. Salty, spicy and sweet, these tender vegetables pack more flavor than the simple ingredients list would suggest. Just grab some tissues before you dig in: “I’m weeping, this is so good,” commented one reader.',
         user_id: 2
     },
     {
-        title: 'Lorem Ipsum III',
-        content: 'Ut etiam sit amet nisl purus in mollis.',
+        title: 'Programming ',
+        content: 'I love C++, C# and java programming languages',
         user_id: 3
     }
 ];
