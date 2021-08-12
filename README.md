@@ -108,10 +108,3 @@ If at this point you are unable to get the project up and running, feel free to 
 -----------
 
 ## Questions 
-GitHub: https://github.com/Pythonidaer
-
-For additional information, please reach out to codefolio.work@gmail.com
-
-<a href="https://twitter.com/jonamichahammo">
-    <img alt="Twitter: jonamichahammo" src="https://img.shields.io/twitter/follow/jonamichahammo.svg?style=social" target="_blank" />
-</a> 
