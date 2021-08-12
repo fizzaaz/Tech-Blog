@@ -1,110 +1,64 @@
 # Tech Blog
 
-# Model View Controller Practice
-[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-
 ## Description 
->*A project to practice separation of concerns (Model View Controller - MVC) as well as learn how to use the Handlebars.js templating engine.*
-[View Deployed Version Here](http://mvc-unh.herokuapp.com/)
------------
 
-![Screenshot Demo](images/homepage.png)
+This is a project which was developed for the University of Arizona Coding Bootcamp course. The application contained within is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. The app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
------------
-## Table of Contents
-
-* [Installation and 'How to' Video](#installation)
+## Table of Contents 
 
 * [Usage](#usage)
-
+* [Credits](#credits)
 * [License](#license)
-
-* [Contributing](#contributing)
-
-* [Tests](#tests)
-
-* [Resources](#resources)
-
-* [Questions](#questions)
-
------------
-## Installation 
-If you would like to install this project on your local computer, make sure you have a database you can run the seeds into. Seeds are sample rows for each model (table), to give you some starter data. Reading the package.json will go a long ways, so of course, make sure you read the script and seeds code, as well as run an npm install.
-
-This project is hosted on Heroku and utilizes JawsDB. The .env is not uploaded to GitHub for security reasons, but to fully replicate this website on a cloud-based platform, you will need to generate a connection string in order to seed the data through a database on such a platform as Heroku. I did so from .env with JawsDB.
-
------------
+* [Documentation](#documentation)
 
 ## Usage 
-You are free to use this for learning purposes. The idea is not my own save for some light creative design. This was a homework for Trilogy Full Stack Developer coding bootcamp associated with the University of New Hampshire.
 
------------
+Clone the repo, navigate to the root folder, run the following commands from the CLI:     
 
-## License 
-This project was created under the MIT License.
+Run Test;    
+`npm run test`     
 
------------
+Seed DB;   
+`npm run seed`     
 
-## Contributing 
-I am not looking for contributors, but please reach out to me if you are looking for contributors on projects. I may be able to help out with HTML/CSS/JavaScript or perhaps some debugging.
+Start Server;     
+`npm start server`     
 
------------
+## Credits
 
-## Tests 
-There are no tests for this.
-1. Git Clone
-2. npm install
-3. node seeds/index.js
-4. read the package.json!
-5. node server.js and test on your local host
+University of Arizona Coding Bootcamp Week 14 Module 14: Object-Relational Mapping.
 
-If at this point you are unable to get the project up and running, feel free to reach out.
+## License
 
------------
+MIT License
 
-## Resources
-[Sequelize Model Configuring](https://sequelize.org/v5/manual/models-definition.html#configuration)
- 
-[What is express-sessions](https://alialhaddad.medium.com/the-basics-of-express-sessions-and-why-to-use-it-4acf0b0cbaf1)
- 
-[Connect Session Store using Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
- 
-[express-session](https://www.npmjs.com/package/express-session)
- 
-[Status Code Definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)
- 
-[Bootstrap 5 Login Example](https://getbootstrap.com/docs/5.0/examples/sign-in/)
- 
-[MDN HTTP Status Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500)
- 
-[foreignKey Sequelize](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-hasMany)
- 
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
- 
-[Sequelize v3 Clean Documentation](https://sequelize.org/v3/docs/associations/#:~:text=foreignKey%20will%20allow%20you%20to,key%20in%20the%20through%20relation.&text=Of%20course%20you%20can%20also,Person.)
- 
-[Sequelize Associations](https://sequelize.org/v3/api/associations/)
- 
-[Sequelize Querying](https://sequelize.org/v3/docs/querying/)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-[Sequelize Model Basics](https://sequelize.org/master/manual/model-basics.html)
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-[Sequelize Getters and Setters](https://sequelize.org/master/manual/getters-setters-virtuals.html)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-[Sequelize Hooks](https://sequelize.org/v3/docs/hooks/)
+## Documentation
 
-[Async/Await](https://stackoverflow.com/questions/43422932/async-await-always-returns-promise#:~:text=The%20await%20statement%20operates%20on,resolve%20s%20or%20reject%20s.&text=log%20on%20the%20result%20of,unwrap%20the%20Promise%20for%20you.)
+Live Deployed Application: [View Application](https://uabc-mvc-tech-blog.herokuapp.com/ "Live Deploy")      
 
-[MDN Docs: Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+![Screenshot](doc/proof.png?raw=true "Proof of Application")      
 
-[JavaScript Modules](https://stackify.com/node-js-module-exports/#:~:text=Module%20exports%20are%20the%20instruction,to%20access%20the%20exported%20code.)
 
-[Sequelize Dialect Specific Things](https://sequelize.org/master/manual/dialect-specific-things.html)
 
-[process.env](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7#:~:text=The%20process.,env.)
- 
-[Fix for Sequelize turning floats into strings](https://github.com/sequelize/sequelize/issues/8019)
- 
------------
 
-## Questions 
+
+
+

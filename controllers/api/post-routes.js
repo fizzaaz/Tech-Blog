@@ -1,13 +1,8 @@
-// import the express router object
 const router = require('express').Router();
-// include our required objects for these routes
 const { Post, User, Comment } = require('../../models');
-// import our sequelize connection to the database
 const sequelize = require('../../config/connection');
-// import our loggedIn authenticator since users can't post unless in
 const withAuth = require('../../utils/auth');
 
-// when a post is added, find all it's content and post it in reverse
 router.get('/', (req, res) => {
     console.log('======================');
     Post.findAll({
@@ -38,9 +33,8 @@ router.get('/', (req, res) => {
             console.log(err);
             res.status(500).json(err);
         });
-});
 
-// when a user clicks on a specific post, return all that data
+});
 router.get('/:id', (req, res) => {
     Post.findOne({
             where: {
@@ -78,9 +72,7 @@ router.get('/:id', (req, res) => {
         });
 });
 
-// After user submits a new post, connect user session then get above
 router.post('/', withAuth, (req, res) => {
-    // creates a new Post model instance and calls save on it
     Post.create({
             title: req.body.title,
             content: req.body.content,
@@ -93,15 +85,11 @@ router.post('/', withAuth, (req, res) => {
         });
 });
 
-// when user clicks 'update' button, replace post-id data with new
 router.put('/:id', withAuth, (req, res) => {
-// Update multiple instances that match the where options
     Post.update({
-// hash of values to update
             title: req.body.title,
             content: req.body.content
         }, {
-// options to be met within the where attribute
             where: {
                 id: req.params.id
             }
@@ -117,10 +105,7 @@ router.put('/:id', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
-// when user clicks 'delete' button, remove record from database entirely
 router.delete('/:id', withAuth, (req, res) => {
-// Delete multiple instances, in this case just where the id has been selected. On a post/:id page, clicking the delete button will trigger the front end form that will ship a delete request back here
     Post.destroy({
         where: {
             id: req.params.id
