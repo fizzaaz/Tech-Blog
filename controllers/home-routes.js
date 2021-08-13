@@ -1,4 +1,3 @@
-const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const router = require('express').Router();
 router.get('/', (req, res) => {
@@ -113,7 +112,7 @@ router.get('/posts-comments', (req, res) => {
         })
         .then(dbPostData => {
             if (!dbPostData) {
-                res.status(404).json({ message: 'No post found with this id' });
+                res.status(404).json({ message: 'OPPS! NO POST found with that id' });
                 return;
             }
             const post = dbPostData.get({ plain: true });
